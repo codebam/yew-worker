@@ -11,7 +11,9 @@ wasm-opt = false
 crate-type = ["cdylib"]
 
 [dependencies]
-worker = "0.0.15"
+trunk = "0.17.2"
+worker = "0.0.17"
+yew = { version="0.20", features=["csr", "hydration", "ssr"] }
 
 [profile.release]
 lto = true
